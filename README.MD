@@ -47,7 +47,7 @@ __xls2any.bat__ or __xls2any.sh__ 实用命令,
 3. 单独使用一个sheet来表示其它表的元数据组,每列声明一个表的数据格式(见test3-meta_sheet)：
    SheetName=data_table_name[=start_row][=simple_map?]  
    start_row： 起始行
-   simple_map： 是否是简单映射  
+   simple_map： 是否是简单映射, &列作key, 其它非&列为value(只能有1列)。列名不出现
    ColumnName=vk_param_or_field_name[=vk_param]...[=vk_param]  
    ColumnName可以是真实列名也可以是VK(virtual key), field_name 即生成的key，VK名不会写到数据里
    目前VK有：
